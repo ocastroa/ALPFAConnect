@@ -25,24 +25,18 @@ public class Login extends AppCompatActivity {
 
     public void onClick(View v){
         switch(v.getId()){
-//            case R.id.bLogin:
-//                if (!loginEditViewsFilledProperly()){
-//                    signIn(emailText.getText().toString(),
-//                            passwordText.getText().toString());
-//                }else{
-//                    Toast.makeText(Login.this,
-//                            "Please filled out both a valid email and password",
-//                            Toast.LENGTH_LONG).show();
-//                }
-//                break;
+            case R.id.bLogin:
+                Intent intentOne = new Intent(Login.this, MainActivity.class);
+                startActivity(intentOne);
+                break;
             case R.id.bRegister:
-                Intent intent = new Intent(Login.this, Register.class);
+                Intent intentTwo = new Intent(Login.this, Register.class);
                 if (!loginEditViewsFilledProperly()){
                     // Intent to register activity.
-                    intent.putExtra("EMAIL", emailText.getText().toString());
-                    intent.putExtra("PASSWORD", passwordText.getText().toString());
+                    intentTwo.putExtra("EMAIL", emailText.getText().toString());
+                    intentTwo.putExtra("PASSWORD", passwordText.getText().toString());
                 }
-                startActivity(intent);
+                startActivity(intentTwo);
                 break;
         }
     }
