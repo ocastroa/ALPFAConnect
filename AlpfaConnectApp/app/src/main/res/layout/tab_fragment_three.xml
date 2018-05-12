@@ -1,6 +1,370 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollablContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerView"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:orientation="vertical"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D3D3D3"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="5dp">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/firstCard"
+                android:layout_width="407dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="1dp"
+                app:cardMaxElevation="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/cardTitleZero"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_above="@+id/cardTitleOne"
+                        android:paddingLeft="5dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="1dp"
+                        android:text="Finance"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/cardTitleOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:layout_above="@+id/cardTitle"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginBottom="-6dp"
+                        android:text="Has anyone done any recent summer internships at a bank?"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:layout_marginStart="0dp"
+                        android:gravity="center_vertical"
+                        android:text="Answered by Oscar Castro on May 11, 2018"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/cardTitle"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/replyFirstPost"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:typeface="normal" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/SecondCard"
+                android:layout_marginTop="6dp"
+                android:layout_width="407dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="1dp"
+                app:cardMaxElevation="15dp"
+                app:contentPaddingLeft="0dp"
+                app:contentPaddingRight="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/secondCardTitleZero"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_above="@+id/secondCardTitleOne"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Economics"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/secondCardTitleOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:layout_above="@+id/secondCardTitle"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginBottom="-6dp"
+                        android:text="Whatss is game theory and what examples can we see in the real world?"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/secondCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:layout_marginStart="0dp"
+                        android:gravity="center_vertical"
+                        android:text="Answered by Oscar Castro on May 11, 2018"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/secondTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="78dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/replyFirstPost"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:typeface="normal" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/thirdCard"
+                android:layout_marginTop="6dp"
+                android:layout_width="407dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="1dp"
+                app:cardMaxElevation="15dp"
+                app:contentPaddingLeft="0dp"
+                app:contentPaddingRight="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/thirdCardTitleZero"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_above="@+id/thirdCardTitleOne"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Economics"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/thirdCardTitleOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:layout_above="@+id/thirdCardTitle"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginBottom="-6dp"
+                        android:text="Whatss is game theory and what examples can we see in the real world?"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/thirdCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:layout_marginStart="0dp"
+                        android:gravity="center_vertical"
+                        android:text="Answered by Oscar Castro on May 11, 2018"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/thirdTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="78dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/replyFirstPost"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:typeface="normal" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fourthCard"
+                android:layout_marginTop="6dp"
+                android:layout_width="407dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="1dp"
+                app:cardMaxElevation="15dp"
+                app:contentPaddingLeft="0dp"
+                app:contentPaddingRight="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/fourthCardTitleZero"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_above="@+id/fourthCardTitleOne"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Economics"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fourthCardTitleOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:layout_above="@+id/fourthCardTitle"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginBottom="-6dp"
+                        android:text="Whatss is game theory and what examples can we see in the real world?"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fourthCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:layout_marginStart="0dp"
+                        android:gravity="center_vertical"
+                        android:text="Answered by Oscar Castro on May 11, 2018"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fourthTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="78dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/replyFirstPost"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:typeface="normal" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fifthCard"
+                android:layout_marginTop="6dp"
+                android:layout_width="407dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="1dp"
+                app:cardMaxElevation="15dp"
+                app:contentPaddingLeft="0dp"
+                app:contentPaddingRight="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/fifthCardTitleZero"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:layout_above="@+id/fifthCardTitleOne"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Economics"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fifthCardTitleOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:layout_above="@+id/fifthCardTitle"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginBottom="-6dp"
+                        android:text="Whatss is game theory and what examples can we see in the real world?"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fifthCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="5dp"
+                        android:layout_marginStart="0dp"
+                        android:gravity="center_vertical"
+                        android:text="Answered by Oscar Castro on May 11, 2018"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fifthTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="78dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/replyFirstPost"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:typeface="normal" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

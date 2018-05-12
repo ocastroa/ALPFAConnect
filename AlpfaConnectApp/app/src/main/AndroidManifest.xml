@@ -41,6 +41,22 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ChooseTopics"
+            android:label="ChooseTopics"
+            android:parentActivityName=".RegisterTwo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.oscars.alpfaconnect.RegisterTwo" />
+
+            <intent-filter>
+                <action android:name="com.app.oscars.alpfaconnect.ChooseTopics" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar"></activity>

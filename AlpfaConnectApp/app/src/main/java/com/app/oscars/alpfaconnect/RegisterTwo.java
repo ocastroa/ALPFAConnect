@@ -46,7 +46,7 @@ public class RegisterTwo extends Activity {
         switch (v.getId()) {
             case R.id.bRegister:
                 if (requireFieldsFilled()) {
-                    Intent intent = new Intent(RegisterTwo.this, Login.class);
+                    Intent intent = new Intent(RegisterTwo.this, ChooseTopics.class);
                     startActivity(intent);
                 }
                 break;

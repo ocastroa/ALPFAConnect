@@ -15,6 +15,13 @@
     </string>
     <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>
-    <string name="replyFirstPost">Game theory is "the study of mathematical models of conflict and cooperation between intelligent rational decision-makers". Game theory is mainly used in economics, political science, and psychology, as well as in logic and computer science.
-        Originally ... <i>Click to Read More</i></string>
+    <string name="replyFirstPost">I did an internship at Wells Fargo as an analyst. I did this the summer of my junior year and this was a great experience as I applied all the material I learned in class to real world problems. It was the first time I was so far away from home as I was in New York for the summer ... <i>Click to Read More</i></string>
+    <string name="replySecondPost">Definitely work on personal projects. Work on an app, website, or anything that you find interesting. Not only does this look good on your resume, but it also helps improve you technical skills. Getting your hands dirty with a project is the best way to learn a new language, or ... <i>Click to Read More</i></string>
+    <string name="replyThirdPost">One of the most interesting criminal law books I read in undergrad was Mindhunter by John E. Douglas. You might recognize this title as Netflix made a really great series based on the book. While there are similar things in the book and series, the book goes ... <i>Click to Read More</i></string>
+    <string name="replyFourthPost">I, as probably many students like you, always ask that question: What kind of job can I get after college? Is it going to be a job that I am passionate about?  The answer to that is not so simple. Based on my personal experience I can tell you that my road to success was a ... <i>Click to Read More</i></string>
+    <string name="replyFifthPost">I went to Columbia 10 years ago to get my law degree. I was an optimistic student waiting to tackle anything that got in my way. I always thought I was smart and that made me cocky, but that went down the drain when I met my other classmates... <i>Click to Read More</i></string>
+
+    <string name="firstLinkPost"><href>https://www.cnbc.com/2017/08/09/the-10-companies-with-the-best-summer-internships-according-to-current-interns.html</href></string>
+    <string name="secondLinkPost">The date to apply to Twitters internship for next summer starts August. Make sure to get your resumes ready and be ready to apply. Best of luck! \nhttps://careers.twitter.com/en/university.html</string>
+    <string name="thirdLinkPost"><href>http://www.businessinsider.com/best-internships-in-investment-banking-2017-10</href></string>
 </resources>
